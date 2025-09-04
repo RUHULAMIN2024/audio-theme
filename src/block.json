@@ -1,0 +1,224 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "raat/audio-theme",
+  "version": "1.0.0",
+  "title": "Audio Theme",
+  "category": "widgets",
+  "description": "Short description of the Audio Theme",
+  "keywords": ["Audio Theme"],
+  "textdomain": "audio-theme",
+  "attributes": {
+   
+    
+    "theme": {
+			"type": "string",
+			"default": "theme1"
+		},
+
+    "audioData": {
+      "type": "object",
+      "default": {
+        "SkipBack": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' id='skip-start'><path d='M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L5 8.752V12a.5.5 0 0 1-1 0zm7.5.633L5.696 8l5.804 3.367z'/></svg>",
+        "playBtn": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'><path d='M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z'/></svg>",
+        "pauseBtn": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' id='pause-circle-fill'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5'/></svg>",
+        "SkipForward": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' id='skip-end'><path d='M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.713 3.31 4 3.655 4 4.308v7.384c0 .653.713.998 1.233.696L11.5 8.752V12a.5.5 0 0 0 1 0zM5 4.633 10.804 8 5 11.367z'/></svg>",
+        "title": "It All Began With a Burst",
+        "artist": "Kishi Bashi",
+        "duration": 215,
+        "cover": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxhdWRpbyUyMHBsYXllcnMlMjBtdXNpYyUyMHZpc3VhbGl6YXRpb24lMjBlcXVhbGl6ZXJ8ZW58MHx8fHwxNzQ2NzYzNjEzfDA&ixlib=rb-4.1.0&fit=fillmax&h=300&w=400"
+      }
+    },
+    "styles": {
+      "type": "object",
+      "default": {
+        "container": {
+          "margin": {
+            "desktop": {
+              "top": "0px",
+              "right": "0px",
+              "bottom": "0px",
+              "left": "0px"
+            },
+            "tablet": {
+              "top": "0px",
+              "right": "0px",
+              "bottom": "0px",
+              "left": "0px"
+            },
+            "mobile": {
+              "top": "0px",
+              "right": "0px",
+              "bottom": "0px",
+              "left": "0px"
+            }
+          },
+          "padding": {
+            "desktop": {
+              "top": "1.5rem",
+              "right": "1.5rem",
+              "bottom": "1.5rem",
+              "left": "1.5rem"
+            },
+            "tablet": {
+              "top": "1.5rem",
+              "right": "1.5rem",
+              "bottom": "1.5rem",
+              "left": "1.5rem"
+            },
+            "mobile": {
+              "top": "1.5rem",
+              "right": "1.5rem",
+              "bottom": "1.5rem",
+              "left": "1.5rem"
+            }
+          },
+          "border": {
+            "width": "",
+            "style": "solid",
+            "color": ""
+          },
+          "radius": {
+            "top": "1rem",
+            "right": "1rem",
+            "bottom": "1rem",
+            "left": "1rem"
+          },
+          "bg": {
+            "color": "linear-gradient(135deg, #581c87 0%, #312e81 100%)",
+            "type": "gradient",
+            "gradient": "linear-gradient(135deg, #581c87 0%, #312e81 100%)"
+          }
+        },
+        "content": {
+          "textAlign": "left",
+          "title": {
+            "typo": {
+              "fontSize": {
+                "desktop": "1.25rem",
+                "tablet": "1.25rem",
+                "mobile": "1.25rem"
+              },
+              "fontWeight": 700,
+              "lineHeight": "1.75rem",
+              "fontFamily": "ui-sans-serif, system-ui",
+              "textTransform": "capitalize"
+            },
+            "color": "#ffffff",
+            "margin": {
+              "desktop": {
+                "top": "0px",
+                "right": "0px",
+                "bottom": "0.25rem",
+                "left": "0px"
+              },
+              "tablet": {
+                "top": "0px",
+                "right": "0px",
+                "bottom": "0.25rem",
+                "left": "0px"
+              },
+              "mobile": {
+                "top": "0px",
+                "right": "0px",
+                "bottom": "0.25rem",
+                "left": "0px"
+              }
+            }
+          },
+          "artist": {
+            "typo": {
+              "fontSize": {
+                "desktop": "0.875rem",
+                "tablet": "0.875rem",
+                "mobile": "0.875rem"
+              },
+              "fontWeight": 600,
+              "lineHeight": "1.25rem",
+              "letterSpace": "0.05em",
+              "textTransform": "uppercase",
+              "fontFamily": "ui-sans-serif, system-ui"
+            },
+            "color": "#a5b4fc",
+            "margin": {
+              "desktop": {
+                "top": "0px",
+                "right": "0px",
+                "bottom": "0px",
+                "left": "0px"
+              },
+              "tablet": {
+                "top": "0px",
+                "right": "0px",
+                "bottom": "0px",
+                "left": "0px"
+              },
+              "mobile": {
+                "top": "0px",
+                "right": "0px",
+                "bottom": "0px",
+                "left": "0px"
+              }
+            }
+          },
+          "statusIndicator": {
+            "width": "3rem",
+            "height": "3rem",
+            "padding": {
+              "desktop": {
+                "top": "0px",
+                "right": "0px",
+                "bottom": "0px",
+                "left": "0px"
+              },
+              "tablet": {
+                "top": "0px",
+                "right": "0px",
+                "bottom": "0px",
+                "left": "0px"
+              },
+              "mobile": {
+                "top": "0px",
+                "right": "0px",
+                "bottom": "0px",
+                "left": "0px"
+              }
+            },
+            "border": {
+              "width": "",
+              "style": "solid",
+              "color": ""
+            },
+            "radius": {
+              "top": "50%",
+              "right": "50%",
+              "bottom": "50%",
+              "left": "50%"
+            },
+            "colors": {
+              "color": " #a855f7",
+              "bg": "#a855f74d"
+            }
+          },
+
+          "playBg": {
+            "color":""
+          }
+        }
+      }
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    
+    "html": false
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./view.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
