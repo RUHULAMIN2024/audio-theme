@@ -366,6 +366,7 @@ const Style = ({ attributes, setAttributes, device }) => {
         initialOpen={false}
       >
         <Background
+        isImage = {false}
           className="mt10"
           value={playBg}
           onChange={(v) =>

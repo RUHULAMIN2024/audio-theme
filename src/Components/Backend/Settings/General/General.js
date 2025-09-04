@@ -29,10 +29,10 @@ const General = ({ attributes, setAttributes }) => {
 
       <PanelBody
         className="bPlPanelBody"
-        title={__("Audio Data", "audio-theme")}
+        title={__("Audio Player", "audio-theme")}
         initialOpen={false}
       >
-        <Label>Audio Title</Label>
+        <Label>Title</Label>
 
         <TextControl
           value={title}
@@ -40,7 +40,7 @@ const General = ({ attributes, setAttributes }) => {
             setAttributes({ audioData: updateData(audioData, v, "title") })
           }
         />
-        <Label>Artist Name</Label>
+        <Label>Artist</Label>
 
         <TextControl
           value={artist}
@@ -60,7 +60,7 @@ const General = ({ attributes, setAttributes }) => {
         />
         <IconLibrary
           className="mt10"
-          label="play Icon"
+          label="Play Icon"
           onChange={(v) =>
             setAttributes({
               audioData: updateData(audioData, v, "playBtn"),

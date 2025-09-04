@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     createRoot(blockNameEl).render(
       <>
         <Style attributes={attributes} id={blockNameEl.id} />
-        <div className="audioPlayer">
+        <div className="audio-player">
           <Theme attributes={attributes} />
         </div>{" "}
       </>

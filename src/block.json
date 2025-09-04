@@ -101,7 +101,7 @@
               },
               "fontWeight": 700,
               "lineHeight": "1.75rem",
-              "fontFamily": "ui-sans-serif, system-ui",
+              "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;",
               "textTransform": "capitalize"
             },
             "color": "#ffffff",
