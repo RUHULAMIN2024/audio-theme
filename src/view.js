@@ -4,19 +4,19 @@ import Style from "./Components/Common/Style";
 import Theme from "./Components/Common/theme/theme";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const blockNameEls = document.querySelectorAll(".wp-block-raat-audio-theme");
-  blockNameEls.forEach((blockNameEl) => {
-    const attributes = JSON.parse(blockNameEl.dataset.attributes);
+  const audioThemeEls = document.querySelectorAll(".wp-block-raat-audio-theme");
+  audioThemeEls.forEach((audioThemeEl) => {
+    const attributes = JSON.parse(audioThemeEl.dataset.attributes);
 
-    createRoot(blockNameEl).render(
+    createRoot(audioThemeEl).render(
       <>
-        <Style attributes={attributes} id={blockNameEl.id} />
+        <Style attributes={attributes} id={audioThemeEl.id} />
         <div className="audio-player">
           <Theme attributes={attributes} />
         </div>{" "}
       </>
     );
 
-    blockNameEl?.removeAttribute("data-attributes");
+    audioThemeEl?.removeAttribute("data-attributes");
   });
 });

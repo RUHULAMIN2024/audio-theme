@@ -5,10 +5,7 @@ export const generalStyleTabs = [
   { name: "style", title: __("Style", "audio-theme") },
 ];
 
-export const purposeTypeOptions = [
-  { label: "Default", value: "default" },
-  { label: "Primary", value: "primary" },
-];
+
 export const themeOptions = [
   { value: "theme1", label: __("Theme-1", "audio-theme") },
   { value: "theme2", label: __("Theme-2", "audio-theme") },
@@ -18,7 +15,7 @@ export const themeOptions = [
 export const blocks = [
   {
     label: "Theme-1",
-    value: "default",
+    value: "theme1",
     content: `<!-- wp:raat/audio-theme /-->`,
   },
   {

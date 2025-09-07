@@ -1,8 +1,6 @@
-import { __ } from "@wordpress/i18n";
 import {
   InspectorControls,
   BlockControls,
-  AlignmentToolbar,
 } from "@wordpress/block-editor";
 import { TabPanel } from "@wordpress/components";
 import { tabController } from "../../../../../bpl-tools/utils/functions";
@@ -12,21 +10,12 @@ import { blocks, generalStyleTabs } from "../../../utils/options";
 import { BplBlockPreview } from "../../../../../bpl-tools/Components";
 
 const Settings = ({ attributes, setAttributes, clientId, device }) => {
-  const { alignment, theme } = attributes;
+  const { theme } = attributes;
 
   return (
     <>
       <InspectorControls>
-        <div className="bBlocksInspectorInfo">
-          Need more block like this? Checkout the bundle ➡{" "}
-          <a
-            href="https://wordpress.org/plugins/b-blocks"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            B Blocks
-          </a>
-        </div>
+        
 
         <TabPanel
           className="bPlTabPanel wp-block-raat-audio-theme"
